@@ -1,0 +1,56 @@
+<pl-question-panel>
+  <markdown>A student makes a cup of coffee and leaves it on her desk. She then leaves her study room for 1 hour. 
+    When she comes back, she notices the coffee level drops {{params.drop}} $mm$ in the glass cup. 
+    She suspects that her classmate has taken a sip of the coffee, but she isn't sure.
+  </markdown>
+</pl-question-panel>
+  
+<pl-hide-in-panel answer="true">
+<div class="card my-2">
+
+<div class="card-body">
+  <pl-question-panel>
+      
+    <markdown>If the {{params.V}} $cm^3$ of coffee is in a {{params.diameter}} $cm$ diameter cup and decreases in temperature from to ${{params.T1}} ^{\circ}C$  to ${{params.T2}} ^{\circ}C$ , 
+      by how much would you expect the coffee level to drop? 
+    </markdown>
+    
+  </pl-question-panel>
+  
+  <pl-number-input answers-name="part1_ans" rtol = "0.02" weight = "1" allow-blank = "True" label = "Expected Drop = " suffix = "$mm$"></pl-number-input>
+  
+</div>
+</div>
+</pl-hide-in-panel>
+
+
+<pl-hide-in-panel answer="true">
+  <div class="card my-2">
+  
+  <div class="card-body">
+    <pl-question-panel>
+        
+      <markdown> Did the classmate take a sip of the coffee?
+      </markdown>
+      
+    </pl-question-panel>
+    
+    <pl-multiple-choice answers-name="part2_ans" weight = "1" >
+      <pl-answer correct= {{ params.part2.ans1.correct }} > {{ params.part2.ans1.value }}  </pl-answer>
+      <pl-answer correct= {{ params.part2.ans2.correct }} > {{ params.part2.ans2.value }}  </pl-answer>
+    </pl-multiple-choice>
+    
+  </div>
+  </div>
+  </pl-hide-in-panel>
+
+
+  
+<pl-question-panel>
+  <markdown>
+  
+  ---
+  Problem is licensed under the [CC-BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).<br> ![The Creative Commons 4.0 license requiring attribution-BY, non-commercial-NC, and share-alike-SA license.](https://raw.githubusercontent.com/firasm/bits/master/by-nc-sa.png)
+  </markdown>
+</pl-question-panel>
+  

@@ -1,0 +1,53 @@
+<pl-question-panel>
+  <markdown> Nikita Mazepin has spun to a stop on the track yet again during a qualifying session. ${{params.d}} m$ behind him, 
+    George Russell is on a fast lap at a speed of ${{params.v}} km/hr$. 
+     </markdown>
+</pl-question-panel>
+  
+<pl-hide-in-panel answer="true">
+  <div class="card my-2">
+  <div class="card-header">Part 1</div>
+  
+  <div class="card-body">
+    <pl-question-panel>
+        
+      <markdown>If George with his car weighs ${{params.m}} kg$, how much Kinetic Energy must be dissipated if he wishes to come to a complete stop before hitting Mazepin?
+      </markdown>
+      
+    </pl-question-panel>
+    
+    <pl-number-input answers-name="part1_ans" rtol = "0.02" weight = "1" allow-blank = "True" label = "$KE = $" suffix = "$J$" ></pl-number-input>
+    
+  </div>
+  </div>
+  </pl-hide-in-panel>
+
+
+  <pl-hide-in-panel answer="true">
+    <div class="card my-2">
+    <div class="card-header">Part 2</div>
+    
+    <div class="card-body">
+      <pl-question-panel>
+          
+        <markdown>Assuming George has four ceramic-carbon rotors, each at a temperature of ${{params.T1}} ^{\circ} C$ each with a mass of ${{params.mrotor}} kg$, and assuming all braking energy is converted to 
+          heat energy in the brake rotors, what is the final temperature of the rotors once the car has stopped? You may assume the ceramic-carbon rotors have a specific heat of ${{params.c}} {J/kg*K}$.
+        </markdown>
+        
+      </pl-question-panel>
+      
+      <pl-number-input answers-name="part2_ans" rtol = "0.02" weight = "1" allow-blank = "True" label = "$T_{final} = $" suffix = "$^{\circ} C$" ></pl-number-input>
+      
+    </div>
+    </div>
+    </pl-hide-in-panel>
+
+  
+<pl-question-panel>
+  <markdown>
+  
+  ---
+  Problem is licensed under the [CC-BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).<br> ![The Creative Commons 4.0 license requiring attribution-BY, non-commercial-NC, and share-alike-SA license.](https://raw.githubusercontent.com/firasm/bits/master/by-nc-sa.png)
+  </markdown>
+</pl-question-panel>
+  

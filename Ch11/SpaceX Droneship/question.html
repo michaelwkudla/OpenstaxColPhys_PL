@@ -1,0 +1,25 @@
+<pl-question-panel>
+  <markdown>The SpaceX Droneship is an autonomous boat which is used to catch rockets landing from space. 
+  It has approximate dimensions ${{params.L1}} m$ by ${{params.L2}} m$ and a height of 
+  ${{params.h1}} m$ and a mass of ${{params.m1}} kg$.
+  </markdown>
+  <markdown><img src="{{options.client_files_question_url}}/Droneship.jpg" width = "300"></markdown>
+</pl-question-panel>
+  
+<pl-hide-in-panel answer="true">
+    <markdown>If a rocket with mass ${{params.m2}} kg$ lands on the drone ship, how much does it sink into the water from its neutral position?
+      Assume a density of seawater of ${{params.rho}} m/s^2$. Enter your answer as a <b>positive</b> number.
+    </markdown>
+
+  <pl-number-input answers-name="part1_ans" rtol = "0.05" weight = "1" allow-blank = "True" label = "${\Delta}h = $" suffix = "$m$" ></pl-number-input>
+</pl-hide-in-panel>
+
+  
+<pl-question-panel>
+  <markdown>
+  
+  ---
+  Problem is licensed under the [CC-BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).<br> ![The Creative Commons 4.0 license requiring attribution-BY, non-commercial-NC, and share-alike-SA license.](https://raw.githubusercontent.com/firasm/bits/master/by-nc-sa.png)
+  </markdown>
+</pl-question-panel>
+  
