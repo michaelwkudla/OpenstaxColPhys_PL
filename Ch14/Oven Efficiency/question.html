@@ -1,0 +1,72 @@
+<pl-question-panel>
+  <markdown>Ovens are an everyday utility which almost everyone uses. However, they are terribly inefficient. A cake with mass ${{params.m_cake}} kg$ 
+    is heated in an oven from ${{params.T1}} ^{\circ} C$ to ${{params.T2}} ^{\circ} C$. You can assume the cake has a specific heat capacity of
+    ${{params.c_cake}} kJ/(kg*K)$. 
+     </markdown>
+</pl-question-panel>
+  
+
+<pl-hide-in-panel answer="true">
+  <div class="card my-2">
+  <div class="card-header">Part 1</div>
+  
+  <div class="card-body">
+    <pl-question-panel>
+        
+      <markdown>How much heat is transferred to the cake?
+      </markdown>
+      
+    </pl-question-panel>
+    
+    <pl-number-input answers-name="part1_ans" rtol = "0.02" weight = "1" allow-blank = "True" label = "$Q_{cake} = $" suffix = "$kJ$" ></pl-number-input>
+    
+  </div>
+  </div>
+</pl-hide-in-panel>
+
+<pl-hide-in-panel answer="true">
+  <div class="card my-2">
+  <div class="card-header">Part 2</div>
+  
+  <div class="card-body">
+    <pl-question-panel>
+        
+      <markdown>If there is ${{params.m_air}} kg$ of air in the oven and the inside of the oven has ${{params.m_steel}} kg$ of steel, 
+        both of which are also heated from ${{params.T1}} ^{\circ} C$ to ${{params.T2}} ^{\circ} C$, how much energy is put into the
+        whole oven system (including the cake, air, and steel inside)? $c_{air} = {{params.c_air}} kJ/(kg*K), c_{steel} = {{params.c_steel}} kJ/(kg*K)$. 
+      </markdown>
+      
+    </pl-question-panel>
+    
+    <pl-number-input answers-name="part2_ans" rtol = "0.02" weight = "1" allow-blank = "True" label = "$Q_{total} = $" suffix = "$kJ$" ></pl-number-input>
+    
+  </div>
+  </div>
+</pl-hide-in-panel>
+
+<pl-hide-in-panel answer="true">
+  <div class="card my-2">
+  <div class="card-header">Part 3</div>
+  
+  <div class="card-body">
+    <pl-question-panel>
+        
+      <markdown>What fraction of total heat is transferred to the cake?
+      </markdown>
+      
+    </pl-question-panel>
+    
+    <pl-number-input answers-name="part3_ans" rtol = "0.02" weight = "1" allow-blank = "True" label = "${Q}_{cake} / {Q}_{total} = $"></pl-number-input>
+    
+  </div>
+  </div>
+</pl-hide-in-panel>
+
+<pl-question-panel>
+  <markdown>
+  
+  ---
+  Problem is licensed under the [CC-BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).<br> ![The Creative Commons 4.0 license requiring attribution-BY, non-commercial-NC, and share-alike-SA license.](https://raw.githubusercontent.com/firasm/bits/master/by-nc-sa.png)
+  </markdown>
+</pl-question-panel>
+  
